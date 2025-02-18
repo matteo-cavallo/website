@@ -1,17 +1,16 @@
 ---
 import "../styles/global.css";
-
 import Footer from "@components/Footer.astro";
 
 type Props = {
+  title?: string;
   description?: string;
 };
 
 const {
+  title = "Matteo Cavallo • Software Engineer",
   description = "Matteo Cavallo is a Software Engineer based in Paris, France. Frontend Engineer at Qonto.",
 } = Astro.props;
-
-const siteTitle = `Matteo Cavallo`;
 ---
 
 <html lang="en">
@@ -20,21 +19,16 @@ const siteTitle = `Matteo Cavallo`;
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
 
-    <title>{siteTitle}</title>
+    <title>{title}</title>
     <meta name="description" content={description} />
 
     <meta name="color-scheme" content="light dark" />
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
-    <meta property="og:title" content={siteTitle} />
+    <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:site_name" content="Matteo Cavallo" />
-
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:title" content={siteTitle} />
-    <meta property="twitter:description" content={description} />
 
     <!-- Favicons -->
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />

@@ -5,22 +5,26 @@ import Layout from "@layouts/Layout.astro";
 
 <Layout>
   <Container>
-    <section class="font-serif">
+    <section>
       <div
-        class="flex flex-col md:flex-row items-center justify-between gap-4 md:gap-8 py-10"
+        class="flex flex-col md:flex-row items-start lg:items-center justify-between gap-8 sm:gap-12 lg:gap-16 py-12 sm:py-16 lg:py-20"
       >
-        <h1 class="animate text-3xl md:text-4xl mb-4">
-          <strong class="font-bold">Matteo Cavallo</strong> is a Software Engineer
+        <h1
+          class="animate text-2xl sm:text-3xl md:text-4xl xl:text-5xl tracking-tight text-zinc-900 dark:text-zinc-100 max-w-[35ch] leading-tight"
+        >
+          <strong class="font-medium">Matteo Cavallo</strong> is a Software Engineer
           based in Paris, France.
         </h1>
         <img
           src="matteo.jpg"
           alt="Portrait of Matteo Cavallo"
-          class="animate filter grayscale hover:filter-none w-48 lg:w-48"
+          class="animate grayscale hover:grayscale-0 w-32 sm:w-36 md:w-40 xl:w-44 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-700 hover:-rotate-2 hover:scale-105"
         />
       </div>
     </section>
-    <section class="font-serif space-y-8">
+    <section
+      class="space-y-8 sm:space-y-10 text-base sm:text-lg xl:text-xl leading-relaxed max-w-[65ch]"
+    >
       <p class="animate">
         <em>I design and build interfaces,</em> crafting web and mobile experiences
         since 2017. I'm currently a Frontend Engineer at <a

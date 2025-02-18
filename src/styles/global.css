@@ -10,30 +10,43 @@ body {
 }
 
 body {
-  @apply font-sans antialiased;
   @apply flex flex-col;
-  @apply bg-stone-100 dark:bg-stone-900;
-  @apply text-black/75 dark:text-white/75;
+  @apply font-sans antialiased;
+  @apply bg-zinc-50 dark:bg-zinc-950;
+  @apply text-zinc-600 dark:text-zinc-400;
+  @apply text-base sm:text-lg;
+  @apply selection:bg-zinc-200 dark:selection:bg-zinc-800;
+  @apply transition-colors duration-700;
 }
 
 main {
-  @apply flex-1 py-10;
+  @apply flex-1 py-6 sm:py-8 md:py-12 lg:py-16;
 }
 
 footer {
-  @apply py-5 text-sm;
+  @apply py-4 sm:py-5 text-sm text-zinc-400 dark:text-zinc-500;
+  @apply border-t border-zinc-200 dark:border-zinc-800;
 }
 
 a {
-  @apply decoration-black/15 dark:decoration-white/30 hover:decoration-black/25 hover:dark:decoration-white/50 text-current hover:text-black hover:dark:text-white transition-colors duration-300 ease-in-out;
-  @apply underline underline-offset-2;
+  @apply decoration-zinc-200 dark:decoration-zinc-700;
+  @apply hover:decoration-zinc-400 hover:dark:decoration-zinc-500;
+  @apply text-zinc-800 dark:text-zinc-300;
+  @apply hover:text-zinc-950 hover:dark:text-zinc-200;
+  @apply transition-all duration-300 ease-out;
+  @apply underline-offset-4 decoration-1;
 }
 
 .animate {
-  @apply opacity-0 translate-y-3;
-  @apply transition-all duration-700 ease-out;
+  @apply opacity-0 translate-y-2;
+  @apply transition-all duration-500 ease-out;
 }
 
 .animate.show {
   @apply opacity-100 translate-y-0;
+}
+
+::selection {
+  @apply bg-zinc-200 dark:bg-zinc-800;
+  @apply text-zinc-900 dark:text-zinc-100;
 }
