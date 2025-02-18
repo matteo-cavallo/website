@@ -1,11 +1,49 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import Container from "@components/Container.astro";
+import Layout from "@layouts/Layout.astro";
 ---
 
 <Layout>
-	<Welcome />
+  <Container>
+    <section class="font-serif">
+      <div
+        class="flex flex-col md:flex-row items-center justify-between gap-4 md:gap-8 py-10"
+      >
+        <h1 class="animate text-3xl md:text-4xl mb-4">
+          <strong class="font-bold">Matteo Cavallo</strong> is a Software Engineer
+          based in Paris, France.
+        </h1>
+        <img
+          src="matteo.jpg"
+          alt="Portrait of Matteo Cavallo"
+          class="animate filter grayscale hover:filter-none w-48 lg:w-48"
+        />
+      </div>
+    </section>
+    <section class="font-serif space-y-8">
+      <p class="animate">
+        <em>I design and build interfaces,</em> crafting web and mobile experiences
+        since 2017. I'm currently a Frontend Engineer at <a
+          href="https://qonto.com">Qonto</a
+        >.
+      </p>
+      <p class="animate">
+        When I’m not writing code, I’m probably lost in the sound of ’60s music
+        (The Beatles and Bob Dylan, obviously), reading Oscar Wilde, or watching
+        a Sergio Leone classic. Occasionally, I play the piano.
+      </p>
+      <p class="animate">
+        Lately, I’ve been learning how to play chess, how to speak French, and
+        how to perfect recipes I’ll probably never write down.
+      </p>
+      <p class="animate">
+        I grew up in Rome, earned a Computer Science degree from Politecnico di
+        Milano (where I also co-hosted the podcast
+        <a
+          href="https://open.spotify.com/show/2kzDycMHhUhgs8WMVsmLsX?si=88d0945d095149dd"
+          >Accademia dei Pugni</a
+        >).
+      </p>
+    </section>
+  </Container>
 </Layout>
