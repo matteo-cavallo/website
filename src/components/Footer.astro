@@ -1,13 +1,22 @@
----
-import Container from "@components/Container.astro";
----
-
-<footer>
-  <Container class="flex justify-between items-center">
-    <span>© 2025 M.C.</span>
-    <nav>
-      <a href="https://github.com/matteo-cavallo">GitHub</a>
-      <a href="https://www.linkedin.com/in/cavallomatteo">LinkedIn</a>
-    </nav>
-  </Container>
+<footer class="container">
+  <hr />
+  <nav>
+    <ul>
+      <li>
+        <a href="/" class="secondary"><small>Matteo Cavallo</small></a>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <a href="https://github.com/matteo-cavallo" class="secondary">
+          <small>GitHub</small>
+        </a>
+      </li>
+      <li>
+        <a href="https://www.linkedin.com/in/cavallomatteo" class="secondary">
+          <small>LinkedIn</small>
+        </a>
+      </li>
+    </ul>
+  </nav>
 </footer>

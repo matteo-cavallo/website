@@ -1,53 +1,52 @@
 ---
-import Container from "@components/Container.astro";
 import Layout from "@layouts/Layout.astro";
 ---
 
 <Layout>
-  <Container>
-    <section>
-      <div
-        class="flex flex-col md:flex-row items-start lg:items-center justify-between gap-8 sm:gap-12 lg:gap-16 py-12 sm:py-16 lg:py-20"
-      >
-        <h1
-          class="animate text-2xl sm:text-3xl md:text-4xl xl:text-5xl tracking-tight text-zinc-900 dark:text-zinc-100 max-w-[35ch] leading-tight"
-        >
-          <strong class="font-medium">Matteo Cavallo</strong> is a Software Engineer
-          based in Paris, France.
-        </h1>
-        <img
-          src="matteo.jpg"
-          alt="Portrait of Matteo Cavallo"
-          class="animate grayscale hover:grayscale-0 w-32 sm:w-36 md:w-40 xl:w-44 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-700 hover:-rotate-2 hover:scale-105"
-        />
-      </div>
-    </section>
-    <section
-      class="space-y-8 sm:space-y-10 text-base sm:text-lg xl:text-xl leading-relaxed max-w-[65ch]"
-    >
-      <p class="animate">
-        <em>I design and build interfaces,</em> crafting web and mobile experiences
-        since 2017. I'm currently a Frontend Engineer at <a
-          href="https://qonto.com">Qonto</a
-        >.
+  <section>
+    <h1 class="animate">
+      <b>Matteo Cavallo</b> is a Software Engineer based in Paris, France.
+    </h1>
+    <!-- <img src="matteo.jpg" alt="Portrait of Matteo Cavallo" /> -->
+  </section>
+  <section>
+    <p class="animate">
+      <em>I design and build interfaces,</em> shaping intuitive web and mobile experiences
+      since 2017. Currently, I'm a Frontend Engineer at
+      <a class="contrast" href="https://qonto.com">Qonto</a>.
+    </p>
+    <p class="animate">
+      Beyond code, you'll find me immersed in '60s music (The Beatles and Bob
+      Dylan, of course), revisiting Oscar Wilde's wit, or enjoying a Sergio
+      Leone classic. Sometimes, I play the piano.
+    </p>
+    <p class="animate">
+      Lately, I've been learning chess, improving my French, and perfecting
+      recipes I'll probably never write down.
+    </p>
+    <p class="animate">
+      Originally from Rome, I earned a Computer Science degree from Politecnico
+      di Milano, where I also co-hosted the podcast
+
+      <a
+        class="contrast"
+        href="https://open.spotify.com/show/2kzDycMHhUhgs8WMVsmLsX?si=88d0945d095149dd"
+        >Accademia dei Pugni</a
+      >.
+    </p>
+  </section>
+  <section class="animate">
+    <hgroup>
+      <h5>Let's Connect</h5>
+      <p>
+        If you want to get in touch with me about something or just to say hi,
+        reach out on social media or send me an email.
       </p>
-      <p class="animate">
-        When I’m not writing code, I’m probably lost in the sound of ’60s music
-        (The Beatles and Bob Dylan, obviously), reading Oscar Wilde, or watching
-        a Sergio Leone classic. Occasionally, I play the piano.
-      </p>
-      <p class="animate">
-        Lately, I’ve been learning how to play chess, how to speak French, and
-        how to perfect recipes I’ll probably never write down.
-      </p>
-      <p class="animate">
-        I grew up in Rome, earned a Computer Science degree from Politecnico di
-        Milano (where I also co-hosted the podcast
-        <a
-          href="https://open.spotify.com/show/2kzDycMHhUhgs8WMVsmLsX?si=88d0945d095149dd"
-          >Accademia dei Pugni</a
-        >).
-      </p>
-    </section>
-  </Container>
+    </hgroup>
+    <address>
+      <a href="mailto:m.cavallo1011@gmail.com" class="secondary">
+        m.cavallo1011@gmail.com
+      </a>
+    </address>
+  </section>
 </Layout>
