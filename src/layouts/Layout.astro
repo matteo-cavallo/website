@@ -17,12 +17,14 @@ const {
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="light dark" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
     />
     <title>{title}</title>
     <meta name="description" content={description} />
+    <script src="/src/scripts/animate.ts"></script>
   </head>
   <body>
     <main class="container">
@@ -31,25 +33,3 @@ const {
     <Footer />
   </body>
 </html>
-
-<script is:inline>
-  document.addEventListener("DOMContentLoaded", () => {
-    const elements = document.querySelectorAll(".animate");
-
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry, index) => {
-          if (entry.isIntersecting) {
-            setTimeout(() => {
-              entry.target.classList.add("show");
-            }, index * 150);
-            observer.unobserve(entry.target);
-          }
-        });
-      },
-      { threshold: 0.1 }
-    );
-
-    elements.forEach((el) => observer.observe(el));
-  });
-</script>
